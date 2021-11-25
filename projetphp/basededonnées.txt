@@ -1,0 +1,45 @@
+$db = mysqli_connect("db5002328915.hosting-data.io","dbu1120906","Abir1987+","dbs1872154");
+
+
+<?php
+        try{
+            $fnames=htmlspecialchars($_POST["fname"]);
+            $images=$_POST["image"];
+            $base = new PDO("mysql:host=localhost; dbname=projet","root","");
+            $now=time();
+            $sql="INSERT INTO blog2(date,fname,images) VALUES(NOW(),'$fnames','$images')";
+            $base->exec($sql);
+            $base=null; 
+        }
+        catch(exception $e){
+            die ("Erreur ".$e-> getMessage());
+        }
+    ?>
+
+
+<?php
+    $scandir = scandir("all_images");
+    foreach($scandir as $fichier){
+        if ($fichier!="." && $fichier!="..") {
+          $ima="all_images/$fichier";
+          echo "<img class='vignette' src=$ima>";
+        }  
+    }
+?>
+
+<?php
+        
+        date_default_timezone_set('EUROPE/PARIS');
+        try{
+            $base = new PDO("mysql:host=localhost; dbname=projet","root","");
+            $retour = $base->query("SELECT * FROM blog2 ORDER BY date DESC");
+            while ($data = $retour->fetch()) {
+                $images="all_images/$fichier";
+                echo "<div class='style'><h2><i class='fab fa-pagelines fa-spin'></i>".$data['fname']." (".preg_replace("#([0-9]*)-([0-9]*)-([0-9]*)#","$3/$2/$1",$data['date']).")</h2>";
+                echo "<img class='vignette' src=$images>".$data['images']."</div><br><br>";
+            }
+            $base=null;
+        }
+        catch(exception $e){
+            die ("Erreur ".$e-> getMessage());
+        }

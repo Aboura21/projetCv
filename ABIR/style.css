@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+/*Ancienne version de background*/
+
+
+/*body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        background-image: url(https://th.bing.com/th/id/OIP.PEf8kRSPDvDACjumWGZzgQHaEK?w=272&h=168&c=7&o=5&dpr=1.5&pid=1.7);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }*/
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+h1 {
+    font-family: 'itim', cursive;
+    color: rgb(200, 0, 100);
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 10px;
+    background-color: #e6e6e6;
+    border-radius: 40%;
+}
+
+.secondary-block {
+    color: black;
+    /*background-image: url(https://th.bing.com/th/id/OIP.PEf8kRSPDvDACjumWGZzgQHaEK?w=272&h=168&c=7&o=5&dpr=1.5&pid=1.7);*/
+    background-color: #e6e6e6;
+}
+
+a {
+    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+a:hover {
+    font-family: 'itim', cursive;
+    color: rgb(200, 0, 100);
+    font-size: 100%;
+}
+
+nav h2 {
+    margin: 0px;
+    padding: 20px 0px 20px 15px;
+    color: rgb(200, 0, 100);
+}
+
+nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 24px;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header h2 {
+    color: rgba(200, 0, 80, 250);
+}
+
+.left img {
+    /*display: inline-block;*/
+    width: 20%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 20px rgb(170, 170, 170);
+    float: left;
+}
+
+header.right {
+    /* display: inline-block;*/
+    float: right;
+}
+
+section {
+    padding: 10px;
+}
+
+header h3 {
+    border: 2px solid black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+h3 {
+    font-family: 'itim', cursive;
+    color: rgb(200, 0, 100);
+}
+
+h3:hover {
+    color: rgb(200, 0, 100);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin: 60px;
+    padding: 60px;
+    background-color: #ca6d6d;
+    border-radius: 20px;
+}
+
+footer img {
+    width: 150px;
+}
+
+#education {
+    padding: 10px;
+}
+
+.head,
+.none {
+    list-style: none;
+}
+
+
+/*.right ul li{
+        text-align: center;
+    }
+
+.marge {
+    margin-right: 60px;
+}*/

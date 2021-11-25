@@ -1,0 +1,78 @@
+
+/*$(function() {
+  $('header div span:first-child').click(function() {
+    $('main').css('font-size', '1.5rem');
+  });
+  $('header div span:nth-child(2)').click(function() {
+    $('main').css('font-size', '1rem');
+  });
+  $('header div span:nth-child(3)').click(function() {
+    $('main article p').css('color', 'black');
+  });
+  $('header div span:nth-child(4)').click(function() {
+    $('main article p').css('color', 'green');
+  });
+});  */
+function grand() {
+  var m = document.getElementsByTagName('main')[0];
+  m.style.fontSize = '1.5rem';
+}
+function petit() {
+  var m = document.getElementsByTagName('main')[0];
+  m.style.fontSize = '1rem';
+}
+function noir() {
+  var p = document.querySelectorAll('main article p');
+  for (var index=0; index<p.length; index++) {
+    p[index].style.color = 'black';
+  }    
+}
+function vert() {
+  var p = document.querySelectorAll('main article p');
+  for (var index=0; index<p.length; index++) {
+    p[index].style.color = 'green';
+  }  
+}
+function valider(ev) {
+  var exp = new RegExp(/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/);
+  var ok = true;
+  var nom = f.nom.value;
+  var mail = f.mail.value;
+  var ta = f.ta.value;
+  if (nom == '') {
+    document.getElementById('span1').innerHTML = 'Veuillez compléter ce champ';
+    ok = false;
+  }
+  else {
+    document.getElementById('span1').innerHTML = '';
+  }  
+  if (mail == '') {  
+    document.getElementById('span2').innerHTML = 'Veuillez compléter ce champ';
+    ok = false;
+  }
+  else {
+    document.getElementById('span2').innerHTML = '';
+    if (exp.test(mail) == false) {
+      ok = false;
+      document.getElementById('span2').innerHTML = 'L\'adresse mail est mal formée';
+    } 
+    else {
+      document.getElementById('span2').innerHTML = '';
+    }  
+  }  
+  if (ta == '') {  
+    document.getElementById('span3').innerHTML = 'Veuillez compléter ce champ';
+    ok = false;
+  }
+  else {
+    document.getElementById('span3').innerHTML = '';
+  }
+  if (ok == true) {
+    alert('Les données ont été envoyées');
+    document.getElementById('span4').innerHTML = '';
+  }
+  else {
+    document.getElementById('span4').innerHTML = 'Attention : le formulaire n\'a pas été envoyé';
+  }
+  ev.preventDefault();
+}

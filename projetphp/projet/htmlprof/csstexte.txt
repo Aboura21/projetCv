@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'ethnocentricregular';
+    src: url('ethnocentric_rg-webfont.woff2') format('woff2'),
+         url('ethnocentric_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}  
+#logo {
+  width: 7rem;
+  transition: transform 1s ease;
+}
+#logo:hover {
+  transform: rotate(180deg);
+}
+nav {
+  float: right;
+}
+nav ul, article ul {
+  list-style: none;
+}
+ 
+nav ul li {
+  display: inline-block;
+  margin-top: 2.5rem;
+  margin-right: 5rem;
+  font-size: 1.2rem;
+  transition: color 1s ease;
+  font-family: 'Oswald', sans-serif;
+}  
+nav ul li:hover {
+  color: red;
+}  
+h2 {
+  font-family: 'ethnocentricregular';
+  color: yellowgreen;
+  /*font-family: 'Oswald', sans-serif;*/
+}
+
+li i {
+  color: yellowgreen;
+}
+  
+article img {
+  width: 15rem;
+  float: left;
+  margin: 0 1rem 0 0;
+} 
+.clear {
+  clear: both;
+}
+article button {
+  float: right;
+  background: yellowgreen;
+  padding: .6rem;
+  box-shadow: .3rem .3rem 1.2rem .5rem lightgrey;
+  border: .1rem solid green;
+  border-radius: .3rem;
+} 
+header, main, footer {
+  max-width: 47rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+body {
+  background: url('../img/fond.jpg');
+} 
+header {
+  background: yellowgreen;
+} 
+main {
+  background: white;
+}  
+article img {
+  box-shadow: .1rem .1rem .3rem .1rem lightgrey;
+  border-radius: .3rem;
+}
+article img:hover {
+  box-shadow: .1rem .1rem .3rem .1rem grey;
+}  
+  
+article button {
+  color: white;
+}
+article button:hover {
+  color: grey;
+}
+footer {
+  text-shadow: .1rem .1rem .5rem #fff;
+  font-size: 1.4rem;
+}  

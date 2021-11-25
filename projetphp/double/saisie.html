@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Saisie PHP</title>
+    <style>
+        a{
+            margin-right: 2em;
+        }
+        form,textarea{
+            display:inline-block;
+            margin-top:2em;
+        }
+        label{
+            width: 7rem;
+            margin: 1rem;
+        }
+        textarea{
+            margin-left:4em;
+        }
+        [type=text]{
+            width:60%;
+        }
+        [type=button]{
+            margin-top:2em;
+        }
+    </style>
+</head>
+<body>
+    <a href="saisie.html">Saisie</a>
+    <a href="blog.php">Blog</a>
+    <a href="galerie.php">Galerie</a>
+    <h1>Saisie d'un nouvel article</h1>
+    <form name="f" action="saisie.php" method="POST" >
+        <label>Titre de l'article</label>
+        <input type="text" name="titre" size="90"><br><br>
+        <label>Article</label>
+        <textarea name="article" rows="15" cols="90"></textarea><br><br>
+        <input type="submit" name="btn" value="Enregistrer" >
+    </form>
+</body>
+</html>

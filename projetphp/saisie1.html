@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gourmandisweet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        form,
+        label,
+        textarea {
+            display: inline-block;
+            margin-top: 2em;
+        }
+        
+        input:focus,
+        textarea:focus {
+            background: rgb(200, 0, 100);
+        }
+        
+        label {
+            width: 7rem;
+            margin: 1rem;
+        }
+        
+        textarea,
+        input {
+            margin-left: 1em;
+        }
+        
+        [type=text] {
+            width: 60%;
+        }
+        
+        [type=button] {
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index1.php"><img id="logo" src="img/lg.png"></a>
+        <nav>
+            <ul>
+                <a href="../index.html">
+                    <li><i class="fas fa-cookie-bite"></i></li>
+                </a>
+                <a href="../nouveau.html">
+                    <li>A PROPOS</li>
+                </a>
+                <a href="contact.html">
+                    <li>CONTACT</li>
+                </a>
+                <a href="../ABIR/index.html">
+                    <li>CV</li>
+                </a>
+            </ul>
+        </nav>
+        <div id="barre">
+            <a href="blog1.php">Blog</a>
+            <a href="saisie1.html">Commande</a>
+            <a href="gestion.php">Gestion</a>
+            <a href="galerie1.php">Galerie</a>
+        </div>
+    </header>
+    <main>
+        <h1>Saisie de commande</h1>
+        <form name="f" action="saisie1.php" method="POST">
+            <label for="mail">E-mail</label>
+            <input class="mail" type="email" id="mail" name="mail" required size="30"><br>
+            <label for="name">Nom</label>
+            <input class="name" type="text" id="name" name="name" required size="30"><br>
+            <label for="surname">Prénom</label>
+            <input class="surname" type="text" id="surname" name="surname" required size="30"><br>
+            <label>La gourmandise</label>
+            <input type="text" name="titre" size="30"><br>
+            <label>Votre commande</label>
+            <textarea name="article" rows="15" cols="50"></textarea><br>
+            <input type="submit" name="btn" value="Enregistrer">
+        </form>
+    </main>
+    <footer>
+        <div>
+            <a href="https://fr.linkedin.com/in/abir-ben-nasr-7b39ab187" onclick="window.open(this.href);return false">Contactez moi sur <i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div>
+            <p>Copyright<sup>©</sup>2021 par moi. Tous droits reservés </p>
+        </div>
+    </footer>
+</body>
+
+</html>

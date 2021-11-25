@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'ethnocentricregular';
+    src: url('ethnocentric_rg-webfont.woff2') format('woff2'), url('ethnocentric_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    width: 7rem;
+    transition: transform 3s ease;
+}
+
+#logo:hover {
+    transform: rotate(3turn);
+}
+
+nav {
+    float: right;
+}
+
+nav ul,
+article ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-right: 5rem;
+    font-size: 1.2rem;
+    transition: color 0s ease;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul li:hover {
+    color: rgb(200, 0, 100);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+h1,
+h2 {
+    font-family: 'itim', cursive;
+    color: rgb(200, 0, 100);
+}
+
+li i {
+    color: rgb(200, 0, 100);
+}
+
+article img {
+    width: 15rem;
+    float: left;
+    margin: 0 1rem 0 0;
+}
+
+.clear {
+    clear: both;
+}
+
+article button {
+    float: right;
+    background: rgb(237, 161, 247);
+    padding: .6rem;
+    box-shadow: .3rem .3rem 1.2rem .5rem lightgrey;
+    border: .1rem solid rgb(200, 0, 100);
+    border-radius: .3rem;
+}
+
+header,
+main,
+footer {
+    max-width: 47rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    background: rgb(223, 223, 223);
+}
+
+main {
+    background: white;
+}
+
+article img {
+    box-shadow: .1rem .1rem .3rem .1rem lightgrey;
+    border-radius: .3rem;
+}
+
+article img:hover {
+    box-shadow: .1rem .1rem .3rem .1rem grey;
+}
+
+article button {
+    color: white;
+}
+
+article button:hover {
+    color: grey;
+}
+
+footer {
+    text-shadow: .1rem .1rem .5rem #fff;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#barre {
+    border: gray .2rem solid;
+    border-bottom-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    padding: 0.3rem;
+    margin: .5rem;
+    background-color: white;
+    clear: both;
+    text-align: center;
+}
+
+div a {
+    color: white;
+    text-align: center;
+    padding: 0.3rem;
+    margin-right: 4rem;
+    margin-left: 0.5rem;
+    font-family: 'Oswald', cursive;
+    font-size: 1.2rem;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    transition: color 0s ease;
+}
+
+header a:hover {
+    color: rgb(200, 0, 100);
+}
+
+.vignette {
+    width: 25%;
+    margin: 2rem;
+}
+
+#ta {
+    text-align: center;
+}

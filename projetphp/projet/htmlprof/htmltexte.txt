@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Projet 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img id="logo" src="img/logo.png">
+    <nav>
+      <ul>
+        <li>EMPLACEMENT</li>
+        <li>A PROPOS</li>
+        <li>CONTACT</li>
+      </ul>  
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h2><i class="fab fa-pagelines fa-spin"></i> EMPLACEMENT</h2>
+      <img src="img/emplacement.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at malesuada lacus. Duis posuere bibendum odio, et gravida ligula accumsan gravida. In non pulvinar sem. Vivamus condimentum, dui sit amet aliquam ullamcorper, mauris dui fringilla ex, et feugiat ipsum risus ac lectus.</p>
+      <p>Aenean auctor ipsum felis. Donec accumsan, enim ut accumsan aliquet, augue tellus suscipit dui, eget tempor metus est quis metus. Fusce accumsan massa justo, nec maximus leo ultrices volutpat.</p>
+      <button>En savoir plus</button>
+      <div class="clear"></div>
+    </article>
+    <article>
+      <h2><i class="fab fa-pagelines"></i> A PROPOS</h2>
+      <img src="img/equipe.jpg">
+      <p>Nam sem risus, elementum vel enim id, blandit commodo turpis. Vivamus efficitur nunc tristique, tincidunt nibh id, facilisis sem. Nunc et leo vulputate, fringilla turpis in, scelerisque sapien. Sed quis magna velit. Phasellus ac erat eu nisl lobortis tempus vitae in lacus.</p>
+      <p>Curabitur bibendum purus nisl, vitae pellentesque urna congue eu. Maecenas faucibus ex nulla, eu lobortis purus consequat non. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed eu odio ac nunc porttitor interdum sit amet a erat. Praesent feugiat maximus neque. Nulla blandit dui at scelerisque commodo. Cras tempus semper ipsum vel rhoncus. Praesent ut lectus quis mi fermentum congue vitae id dui. Pellentesque placerat semper lorem ut porttitor. Vestibulum rutrum tristique nisi vitae interdum. </p>
+      <p>Phasellus lorem turpis, blandit ut urna vitae, condimentum vulputate nisi. Nunc orci diam, tempor ac arcu id, consectetur pellentesque turpis. Integer maximus purus et facilisis ullamcorper.</p>
+      <ul>
+        <li><i class="far fa-check-square"></i> Lorem ipsum dolor sit amet</li>
+        <li><i class="far fa-check-square"></i> Consectetur adipiscing elit</li>
+        <li><i class="far fa-check-square"></i> Ut finibus felis nec nisi </li>
+        <li><i class="far fa-check-square"></i> Suscipit facilisis</li>
+        <li><i class="far fa-check-square"></i> Aenean egestas elementum</li>
+        <li><i class="far fa-check-square"></i> Neque nec pharetra. Sed tempor lectus</li>
+      </ul> 
+      <button>En savoir plus</button>      
+      <div class="clear"></div>
+    </article>
+  </main>
+  <footer>
+    <p><center>&copy; 2020 - Eco Recycl</center></p>
+  </footer>
+</body>
+</html>
